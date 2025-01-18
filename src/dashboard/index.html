@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBVIJAYIN</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="../assets/img/favicon.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- <link rel="stylesheet" href="assets/css/all.min.css"> -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/dashboard-style.css">
+    <link rel="stylesheet" href="../assets/css/dashboard-responsive.css">
+</head>
+
+<body>
+    <header>
+        <div class="dashboard-header">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="../assets/img/logo.png" alt="logo-png" class="img-fluid">
+                    </a>
+                    <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button> -->
+                    <!-- <div class="collapse show navbar-collapse" id="navbarSupportedContent"> -->
+                        <div class="header-buttons ms-auto">
+                            <div class="notification">
+                                <button class="notification-btn">
+                                    <i class="fa-regular fa-bell"></i>
+                                </button>
+                            </div>
+                            <div class="user-profile">
+                                <div class="user-profile-content d-none d-sm-block">
+                                    <p class="user-name">Hi, Jhon</p>
+                                    <p class="user-mobile">+91 12345 01201</p>
+                                </div>
+                                <button class="user-profile-btn" id="Profile">
+                                    <i class="fa-regular fa-user"></i>
+                                </button>
+                                <div class="profile-drop-menu">
+                                    <div class="profile-menu-top">
+                                        <p class="user-name">Hi, Jhon</p>
+                                        <p class="user-mobile">+91 12345 01201</p>
+                                    </div>
+                                    <ul class="profile-menu">
+                                        <li>
+                                            <a href="my-profile.html" class="profile-menu-link">
+                                                <i class="fa-regular fa-user"></i>
+                                                My Profile
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="profile-menu-link">
+                                                <i class="fa-solid fa-book"></i>
+                                                My courses
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="profile-menu-link">
+                                                <i class="fa-solid fa-file-invoice"></i>
+                                                My Invoice
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="profile-menu-link">
+                                                <i class="fa-solid fa-phone"></i>
+                                                Contact us
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="profile-menu-link">
+                                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                                Logout
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="profile-menu-bottom">
+                                        <p>Terms & Conditions | Privacy Policy </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- </div> -->
+                </div>
+            </nav>
+        </div>
+        <div class="header-bottom">
+            <div class="container-fluid">
+                <h2>My Dashboard</h2>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="dashboard-section">
+            <div class="container">
+                <div class="dashboard-top">
+                    <h3>My courses <i class="fa-solid fa-angle-right"></i></h3>
+                    <div class="my-courses-tabs">
+                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-Course1-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-Course1" type="button" role="tab"
+                                    aria-controls="pills-Course1" aria-selected="true">Course1</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-Course2-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-Course2" type="button" role="tab"
+                                    aria-controls="pills-Course2" aria-selected="false">Course2</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-Course3-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-Course3" type="button" role="tab"
+                                    aria-controls="pills-Course3" aria-selected="false">Course3</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-Course4-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-Course4" type="button" role="tab"
+                                    aria-controls="pills-Course4" aria-selected="false">Course4</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-Course5-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-Course5" type="button" role="tab"
+                                    aria-controls="pills-Course5" aria-selected="false">Course5</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="dashboard-mid">
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-Course1" role="tabpanel"
+                            aria-labelledby="pills-Course1-tab">
+                            <div class="row">
+                                <div class="col-lg-3 mb-3">
+                                    <div class="dashboard-tabs-menu">
+                                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
+                                            aria-orientation="vertical">
+                                            <button class="nav-link active" id="v-pills-Overview-tab"
+                                                data-bs-toggle="pill" data-bs-target="#v-pills-Overview" type="button"
+                                                role="tab" aria-controls="v-pills-Overview" aria-selected="true"><img
+                                                    src="../assets/img/dashboard-img/thunderbolt 2.png" alt="#"
+                                                    class="dash-tab-menu-img">Overview</button>
+                                            <button class="nav-link" id="v-pills-Videos-tab" data-bs-toggle="pill"
+                                                data-bs-target="#v-pills-Videos" type="button" role="tab"
+                                                aria-controls="v-pills-Videos" aria-selected="false"><img
+                                                    src="../assets/img/dashboard-img/film-frames.f70dbb3c 1.png" alt="#"
+                                                    class="dash-tab-menu-img">Videos</button>
+                                            <button class="nav-link" id="v-pills-Notes-tab" data-bs-toggle="pill"
+                                                data-bs-target="#v-pills-Notes" type="button" role="tab"
+                                                aria-controls="v-pills-Notes" aria-selected="false"><img
+                                                    src="../assets/img/dashboard-img/books.710f4060 1.png" alt="#"
+                                                    class="dash-tab-menu-img">Notes</button>
+                                            <button class="nav-link" id="v-pills-Lectures-tab" data-bs-toggle="pill"
+                                                data-bs-target="#v-pills-Lectures" type="button" role="tab"
+                                                aria-controls="v-pills-Lectures" aria-selected="false"><img
+                                                    src="../assets/img/dashboard-img/video-presentation 1.png" alt="#"
+                                                    class="dash-tab-menu-img">Lectures</button>
+                                            <button class="nav-link" id="v-pills-PDF-tab" data-bs-toggle="pill"
+                                                data-bs-target="#v-pills-PDF" type="button" role="tab"
+                                                aria-controls="v-pills-PDF" aria-selected="false"><img
+                                                    src="../assets/img/dashboard-img/file 2.png" alt="#"
+                                                    class="dash-tab-menu-img">PDF</button>
+                                            <button class="nav-link" id="v-pills-Test-tab" data-bs-toggle="pill"
+                                                data-bs-target="#v-pills-Test" type="button" role="tab"
+                                                aria-controls="v-pills-Test" aria-selected="false"><img
+                                                    src="../assets/img/dashboard-img/book 1.png" alt="#"
+                                                    class="dash-tab-menu-img">Test</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-9 mb-3">
+                                    <div class="tab-content" id="v-pills-tabContent">
+                                        <div class="tab-pane fade show active" id="v-pills-Overview" role="tabpanel"
+                                            aria-labelledby="v-pills-Overview-tab">
+                                            <div class="dashboard-tabs-menu-items">
+                                                <div class="dashborad-tabs-heading">
+                                                    <h2>Your subjects</h2>
+                                                </div>
+                                                <div class="my-subjects-links">
+                                                    <a href="#" class="subjext-link-btn active"><i
+                                                            class="fa-solid fa-book-open"></i>
+                                                        Self-Learning</a>
+                                                    <a href="#" class="subjext-link-btn"><i
+                                                            class="fa-solid fa-book-open"></i>
+                                                        Practice</a>
+                                                    <a href="#" class="subjext-link-btn"><i
+                                                            class="fa-solid fa-book-open"></i>
+                                                        IA</a>
+                                                    <a href="#" class="subjext-link-btn"><i
+                                                            class="fa-solid fa-book-open"></i>
+                                                        Research Material</a>
+                                                </div>
+                                                <div class="dashborad-tabs-heading">
+                                                    <h2>Features for World-Class Physice</h2>
+                                                </div>
+                                                <div class="dashboard-overview-buttons">
+                                                    <a href="#" class="btn overview-btn">
+                                                        <div class="dash-ovleft">
+                                                            <h3>Videos</h3>
+                                                            <p>4,000+ tutorials uploads.</p>
+                                                        </div>
+                                                        <div class="dash-ovimg">
+                                                            <img src="../assets/img/dashboard-img/film-frames.f70dbb3c 1.png"
+                                                                alt="#" class="img-fluid">
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="btn overview-btn">
+                                                        <div class="dash-ovleft">
+                                                            <h3>Notes</h3>
+                                                            <p>4,000+ Notes uploads.</p>
+                                                        </div>
+                                                        <div class="dash-ovimg">
+                                                            <img src="../assets/img/dashboard-img/books.710f4060 1.png"
+                                                                alt="#" class="img-fluid">
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="btn overview-btn">
+                                                        <div class="dash-ovleft">
+                                                            <h3>Lectures</h3>
+                                                            <p>4,000+ tutorials uploads.</p>
+                                                        </div>
+                                                        <div class="dash-ovimg">
+                                                            <img src="../assets/img/dashboard-img/video-presentation 1.png"
+                                                                alt="#" class="img-fluid">
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="btn overview-btn">
+                                                        <div class="dash-ovleft">
+                                                            <h3>PDF</h3>
+                                                            <p>1,000+ PDF Notes uploads.</p>
+                                                        </div>
+                                                        <div class="dash-ovimg">
+                                                            <img src="../assets/img/dashboard-img/file 2.png" alt="#"
+                                                                class="img-fluid">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="v-pills-Videos" role="tabpanel"
+                                            aria-labelledby="v-pills-Videos-tab">
+                                            <div class="dashboard-tabs-menu-items">
+                                                <div class="dashborad-tabs-heading">
+                                                    <h2>Your subjects</h2>
+                                                </div>
+                                                <div class="my-subjects-links">
+                                                    <a href="#" class="subjext-link-btn active"><i
+                                                            class="fa-solid fa-book-open"></i>
+                                                        Self-Learning</a>
+                                                    <a href="#" class="subjext-link-btn"><i
+                                                            class="fa-solid fa-book-open"></i>
+                                                        Practice</a>
+                                                    <a href="#" class="subjext-link-btn"><i
+                                                            class="fa-solid fa-book-open"></i>
+                                                        IA</a>
+                                                    <a href="#" class="subjext-link-btn"><i
+                                                            class="fa-solid fa-book-open"></i>
+                                                        Research Material</a>
+                                                </div>
+                                                <div class="dashborad-tabs-heading">
+                                                    <h2>Videos 400</h2>
+                                                </div>
+                                                <div class="dash-videos-list">
+                                                    <ul>
+                                                        <li>
+                                                            <div class="dhaborad-videos-card">
+                                                                <a href="video.html" class="dash-video-link">
+                                                                    <div class="dash-vid-content">
+                                                                        <h2>Gorem ipsum dolor sit amet, consectetur
+                                                                            adipiscing elit.</h2>
+                                                                        <p>Morem ipsum dolor sit amet, consectetur
+                                                                            adipiscing elit.</p>
+                                                                    </div>
+                                                                    <div class="dash-vid-icon">
+                                                                        <div class="dashboard-video-play-icon">
+                                                                            <button class="video-play-ico"><i
+                                                                                    class="fa-solid fa-play"></i></button>
+                                                                            <button class="video-play-ico-lock"><i
+                                                                                    class="fa-solid fa-lock"></i></button>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="dhaborad-videos-card">
+                                                                <a href="video.html" class="dash-video-link">
+                                                                    <div class="dash-vid-content">
+                                                                        <h2>Gorem ipsum dolor sit amet, consectetur
+                                                                            adipiscing elit.</h2>
+                                                                        <p>Morem ipsum dolor sit amet, consectetur
+                                                                            adipiscing elit.</p>
+                                                                    </div>
+                                                                    <div class="dash-vid-icon">
+                                                                        <div class="dashboard-video-play-icon">
+                                                                            <button class="video-play-ico"><i
+                                                                                    class="fa-solid fa-play"></i></button>
+                                                                            <button class="video-play-ico-lock"><i
+                                                                                    class="fa-solid fa-lock"></i></button>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="dhaborad-videos-card disable">
+                                                                <a href="#" class="dash-video-link">
+                                                                    <div class="dash-vid-content">
+                                                                        <h2>Gorem ipsum dolor sit amet, consectetur
+                                                                            adipiscing elit.</h2>
+                                                                        <p>Morem ipsum dolor sit amet, consectetur
+                                                                            adipiscing elit.</p>
+                                                                    </div>
+                                                                    <div class="dash-vid-icon">
+                                                                        <div class="dashboard-video-play-icon">
+                                                                            <button class="video-play-ico"><i
+                                                                                    class="fa-solid fa-play"></i></button>
+                                                                            <button class="video-play-ico-lock"><i
+                                                                                    class="fa-solid fa-lock"></i></button>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="dhaborad-videos-card disable">
+                                                                <a href="#" class="dash-video-link">
+                                                                    <div class="dash-vid-content">
+                                                                        <h2>Gorem ipsum dolor sit amet, consectetur
+                                                                            adipiscing elit.</h2>
+                                                                        <p>Morem ipsum dolor sit amet, consectetur
+                                                                            adipiscing elit.</p>
+                                                                    </div>
+                                                                    <div class="dash-vid-icon">
+                                                                        <div class="dashboard-video-play-icon">
+                                                                            <button class="video-play-ico"><i
+                                                                                    class="fa-solid fa-play"></i></button>
+                                                                            <button class="video-play-ico-lock"><i
+                                                                                    class="fa-solid fa-lock"></i></button>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="dhaborad-videos-card disable">
+                                                                <a href="#" class="dash-video-link">
+                                                                    <div class="dash-vid-content">
+                                                                        <h2>Gorem ipsum dolor sit amet, consectetur
+                                                                            adipiscing elit.</h2>
+                                                                        <p>Morem ipsum dolor sit amet, consectetur
+                                                                            adipiscing elit.</p>
+                                                                    </div>
+                                                                    <div class="dash-vid-icon">
+                                                                        <div class="dashboard-video-play-icon">
+                                                                            <button class="video-play-ico"><i
+                                                                                    class="fa-solid fa-play"></i></button>
+                                                                            <button class="video-play-ico-lock"><i
+                                                                                    class="fa-solid fa-lock"></i></button>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="dhaborad-videos-card disable">
+                                                                <a href="#" class="dash-video-link">
+                                                                    <div class="dash-vid-content">
+                                                                        <h2>Gorem ipsum dolor sit amet, consectetur
+                                                                            adipiscing elit.</h2>
+                                                                        <p>Morem ipsum dolor sit amet, consectetur
+                                                                            adipiscing elit.</p>
+                                                                    </div>
+                                                                    <div class="dash-vid-icon">
+                                                                        <div class="dashboard-video-play-icon">
+                                                                            <button class="video-play-ico"><i
+                                                                                    class="fa-solid fa-play"></i></button>
+                                                                            <button class="video-play-ico-lock"><i
+                                                                                    class="fa-solid fa-lock"></i></button>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="dhaborad-videos-card disable">
+                                                                <a href="#" class="dash-video-link">
+                                                                    <div class="dash-vid-content">
+                                                                        <h2>Gorem ipsum dolor sit amet, consectetur
+                                                                            adipiscing elit.</h2>
+                                                                        <p>Morem ipsum dolor sit amet, consectetur
+                                                                            adipiscing elit.</p>
+                                                                    </div>
+                                                                    <div class="dash-vid-icon">
+                                                                        <div class="dashboard-video-play-icon">
+                                                                            <button class="video-play-ico"><i
+                                                                                    class="fa-solid fa-play"></i></button>
+                                                                            <button class="video-play-ico-lock"><i
+                                                                                    class="fa-solid fa-lock"></i></button>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="dhaborad-videos-card disable">
+                                                                <a href="#" class="dash-video-link">
+                                                                    <div class="dash-vid-content">
+                                                                        <h2>Gorem ipsum dolor sit amet, consectetur
+                                                                            adipiscing elit.</h2>
+                                                                        <p>Morem ipsum dolor sit amet, consectetur
+                                                                            adipiscing elit.</p>
+                                                                    </div>
+                                                                    <div class="dash-vid-icon">
+                                                                        <div class="dashboard-video-play-icon">
+                                                                            <button class="video-play-ico"><i
+                                                                                    class="fa-solid fa-play"></i></button>
+                                                                            <button class="video-play-ico-lock"><i
+                                                                                    class="fa-solid fa-lock"></i></button>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="v-pills-Notes" role="tabpanel"
+                                            aria-labelledby="v-pills-Notes-tab">3</div>
+                                        <div class="tab-pane fade" id="v-pills-Lectures" role="tabpanel"
+                                            aria-labelledby="v-pills-Lectures-tab">4</div>
+                                        <div class="tab-pane fade" id="v-pills-PDF" role="tabpanel"
+                                            aria-labelledby="v-pills-PDF-tab">5</div>
+                                        <div class="tab-pane fade" id="v-pills-Test" role="tabpanel"
+                                            aria-labelledby="v-pills-Test-tab">
+                                            <div class="dashboard-tabs-menu-items">
+                                                <div class="dashborad-tabs-heading">
+                                                    <h2>Your subjects</h2>
+                                                </div>
+                                                <div class="my-subjects-links">
+                                                    <a href="#" class="subjext-link-btn active"><i
+                                                            class="fa-solid fa-book-open"></i>
+                                                        Self-Learning</a>
+                                                    <a href="#" class="subjext-link-btn"><i
+                                                            class="fa-solid fa-book-open"></i>
+                                                        Practice</a>
+                                                    <a href="#" class="subjext-link-btn"><i
+                                                            class="fa-solid fa-book-open"></i>
+                                                        IA</a>
+                                                    <a href="#" class="subjext-link-btn"><i
+                                                            class="fa-solid fa-book-open"></i>
+                                                        Research Material</a>
+                                                </div>
+                                                <div class="dashborad-tabs-heading">
+                                                    <h2>Tests 400</h2>
+                                                </div>
+                                                <div class="dash-videos-list">
+                                                    <ul>
+                                                        <li>
+                                                            <div class="dhaborad-videos-card">
+                                                                <a href="test-intro.html" class="dash-video-link">
+                                                                    <div class="dash-vid-content">
+                                                                        <h2>Gorem ipsum dolor sit amet, consectetur
+                                                                            adipiscing elit.</h2>
+                                                                        <p>Morem ipsum dolor sit amet, consectetur
+                                                                            adipiscing elit.</p>
+                                                                    </div>
+                                                                    <div class="dash-vid-icon">
+                                                                        <div class="dashboard-video-play-icon">
+                                                                            <button class="video-play-ico course-unlock"><i class="fa-solid fa-unlock"></i></button>
+                                                                            <button class="video-play-ico-lock"><i
+                                                                                    class="fa-solid fa-lock"></i></button>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="dhaborad-videos-card">
+                                                                <a href="test-intro.html" class="dash-video-link">
+                                                                    <div class="dash-vid-content">
+                                                                        <h2>Gorem ipsum dolor sit amet, consectetur
+                                                                            adipiscing elit.</h2>
+                                                                        <p>Morem ipsum dolor sit amet, consectetur
+                                                                            adipiscing elit.</p>
+                                                                    </div>
+                                                                    <div class="dash-vid-icon">
+                                                                        <div class="dashboard-video-play-icon">
+                                                                            <button class="video-play-ico course-unlock"><i class="fa-solid fa-unlock"></i></button>
+                                                                            <button class="video-play-ico-lock"><i
+                                                                                    class="fa-solid fa-lock"></i></button>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="dhaborad-videos-card disable">
+                                                                <a href="#" class="dash-video-link">
+                                                                    <div class="dash-vid-content">
+                                                                        <h2>Gorem ipsum dolor sit amet, consectetur
+                                                                            adipiscing elit.</h2>
+                                                                        <p>Morem ipsum dolor sit amet, consectetur
+                                                                            adipiscing elit.</p>
+                                                                    </div>
+                                                                    <div class="dash-vid-icon">
+                                                                        <div class="dashboard-video-play-icon">
+                                                                            <button class="video-play-ico course-unlock"><i class="fa-solid fa-unlock"></i></button>
+                                                                            <button class="video-play-ico-lock"><i
+                                                                                    class="fa-solid fa-lock"></i></button>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="dhaborad-videos-card disable">
+                                                                <a href="#" class="dash-video-link">
+                                                                    <div class="dash-vid-content">
+                                                                        <h2>Gorem ipsum dolor sit amet, consectetur
+                                                                            adipiscing elit.</h2>
+                                                                        <p>Morem ipsum dolor sit amet, consectetur
+                                                                            adipiscing elit.</p>
+                                                                    </div>
+                                                                    <div class="dash-vid-icon">
+                                                                        <div class="dashboard-video-play-icon">
+                                                                            <button class="video-play-ico course-unlock"><i class="fa-solid fa-unlock"></i></button>
+                                                                            <button class="video-play-ico-lock"><i
+                                                                                    class="fa-solid fa-lock"></i></button>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-Course2" role="tabpanel"
+                            aria-labelledby="pills-Course2-tab">2</div>
+                        <div class="tab-pane fade" id="pills-Course3" role="tabpanel"
+                            aria-labelledby="pills-Course3-tab">3</div>
+                        <div class="tab-pane fade" id="pills-Course4" role="tabpanel"
+                            aria-labelledby="pills-Course4-tab">4</div>
+                        <div class="tab-pane fade" id="pills-Course5" role="tabpanel"
+                            aria-labelledby="pills-Course5-tab">5</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- js starts here -->
+    <script>
+        (function () {
+
+            var button = document.querySelector('#Profile');
+            var box = document.querySelector('.profile-drop-menu');
+
+            button.addEventListener('click', function () {
+
+                box.classList.toggle('active');
+
+            });
+
+        })();
+    </script>
+    <script src="../assets/js/ajax.jquery.min.js"></script>
+    <!-- <script src="assets/js/all.min.js"></script> -->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

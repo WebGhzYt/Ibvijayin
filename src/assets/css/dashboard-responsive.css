@@ -1,0 +1,399 @@
+@media (max-width:1399.98px) {
+    .videos-menu {
+        min-width: 680px;
+    }
+
+    .videos-menu-top h3 {
+        font-size: var(--font22);
+    }
+
+    .dash-vid-content h2 {
+        font-size: var(--font18);
+    }
+
+    .video-play-ico,
+    .video-play-ico-lock {
+        width: 50px;
+        height: 50px;
+        font-size: 16px;
+        border-radius: 50%;
+    }
+
+    .header-bottom h2 {
+        font-size: var(--font18);
+        font-weight: 500;
+    }
+
+    .my-courses-tabs .nav-pills .nav-item .nav-link {
+        font-size: var(--font20);
+        padding: 10px 60px;
+    }
+
+    .dashborad-tabs-heading h2 {
+        font-size: var(--font20);
+    }
+}
+
+@media (max-width:1199.98px) {
+    .my-subjects-links .subjext-link-btn {
+        padding: 6px 20px;
+        border-radius: 6px;
+    }
+
+    .dash-ovleft h3 {
+        font-size: var(--font20);
+        margin-bottom: 10px;
+    }
+
+    .overview-btn {
+        width: calc(50% - 10px) !important;
+        padding: 16px;
+    }
+
+    .dash-ovimg {
+        width: 60px;
+    }
+
+    .videos-menu {
+        min-width: 600px;
+    }
+
+    .dash-videos-list {
+        height: calc(100vh - 136px);
+        overflow-y: overlay;
+    }
+
+    .test-right-menu {
+        min-width: 280px;
+        padding-top: 120px;
+    }
+
+    .test-left-card-bottom {
+        padding: 20px;
+    }
+
+    .test-left-menu-scrolls {
+        padding: 30px 20px;
+    }
+
+    .test-info-heading {
+        font-size: var(--font24);
+    }
+
+    .live-test-right-menu.collapse.show {
+        position: fixed;
+        right: 0;
+        top: 85px;
+        max-width: 100%;
+        transition: 0.1s !important;
+    }
+
+    .result-perans-table {
+        padding: 50px 100px;
+        gap: 24px 40px;
+    }
+
+    .dashboard-tabs-menu .nav-pills .nav-link {
+        font-size: var(--font16);
+    }
+}
+
+@media (max-width:991.98px) {
+    .dashboard-tabs-menu {
+        overflow-x: scroll;
+        width: 100%;
+    }
+
+    .dashboard-tabs-menu .nav-pills {
+        flex-direction: row !important;
+        flex-wrap: nowrap;
+    }
+
+    .dashboard-tabs-menu .nav-pills .nav-link {
+        padding: 10px 30px;
+    }
+
+    .videos-menu {
+        position: fixed;
+        right: 0;
+        min-width: 100%;
+    }
+
+    .videos-menu.active {
+        position: relative;
+        right: 0;
+    }
+
+    .test-right-menu {
+        min-width: 240px;
+    }
+
+    .text-right-btm-btn,
+    .question-action-btn {
+        padding: 8px 30px;
+    }
+
+    .live-test-footer {
+        padding: 12px 20px;
+    }
+
+    .live-test-page-left {
+        height: 100%;
+    }
+
+    .live-test-progress {
+        width: calc(100% - 180px);
+        padding: 0 20px;
+    }
+
+    .tresult-top-cards {
+        gap: 30px;
+        flex-direction: column;
+        align-content: center;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .result-perans-table {
+        padding: 40px;
+        gap: 16px 24px;
+    }
+}
+
+@media (max-width:767.98px) {
+    .my-courses-tabs .nav-pills .nav-item .nav-link {
+        font-size: var(--fon16);
+        padding: 10px 40px;
+        border-radius: 6px;
+    }
+
+    .dashboard-tabs-menu .nav-pills .nav-link img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .overview-btn {
+        width: 100% !important;
+        padding: 16px;
+    }
+
+    .videos-menu,
+    .question-test-heading p,
+    .questions-card {
+        padding: 16px;
+    }
+
+    .videos-menu.active {
+        min-width: 94px;
+    }
+
+    .live-test-progress .progress {
+        height: 16px;
+    }
+
+    .live-test-footer {
+        flex-direction: column;
+        align-items: start;
+        gap: 16px;
+    }
+
+    .result-perans-table {
+        padding: 40px;
+        gap: 16px;
+    }
+
+    .result-perans-table .result-ans-btn {
+        font-size: var(--font16);
+        width: 50px;
+        height: 32px;
+        border-radius: 6px;
+    }
+
+    .qsec-btns-group {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    #columnchart_material {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .test-info-page {
+        height: 100%;
+    }
+}
+
+@media (max-width:575.98px) {
+    .profile-drop-menu.active {
+        top: 80px;
+        right: 0px;
+        width: 300px;
+    }
+
+    .dashboard-top h3 {
+        font-size: var(--font18);
+    }
+
+    .dashboard-top {
+        padding: 20px 0;
+    }
+
+    .dash-vid-content p {
+        font-size: var(--font14);
+    }
+
+    .video-play-ico,
+    .video-play-ico-lock {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+        border-radius: 50%;
+    }
+
+    .dash-vid-content h2 {
+        font-size: var(--font14);
+    }
+
+    .dhaborad-videos-card {
+        padding: 8px 12px;
+    }
+
+    .dashboard-tabs-menu .nav-pills .nav-link {
+        padding: 6px 20px;
+    }
+
+    .videos-menu.active {
+        display: none;
+    }
+
+    .text-heading {
+        font-size: var(--font14);
+        text-wrap: wrap;
+        width: calc(100% - 120px);
+        margin-bottom: 0;
+    }
+
+    .text-right-btm-btn,
+    .question-action-btn {
+        padding: 8px 20px;
+        font-size: var(--font16);
+    }
+
+    .live-test-cards p {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    .test-info-heading {
+        font-size: var(--font20);
+    }
+
+    .question-heading {
+        font-size: var(--font18);
+        margin-bottom: 20px;
+    }
+
+    .question-test-heading p {
+        font-size: var(--font16);
+    }
+
+    .questions-ans-submit label.btn {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .qsec-btns-group {
+        gap: 16px;
+        flex-direction: column;
+    }
+
+    .live-test-progress {
+        width: 100%;
+        padding: 12px 0 0;
+    }
+
+    .side-footer-menu-btn {
+        padding: 10px 30px;
+    }
+
+    .profile-page-card {
+        flex-direction: column;
+    }
+
+    .profile-details-top h4 {
+        font-size: var(--font16);
+    }
+
+    .personal-information table.table {
+        min-width: 480px;
+    }
+
+    .personal-information table tr td {
+        font-size: var(--font16);
+        padding-bottom: 32px;
+    }
+
+    .profile-update-form .input-group span.input-group-text {
+        width: fit-content;
+        height: fit-content;
+        padding: 10px 16px;
+    }
+
+    .profile-update-form .form-select,
+    .profile-update-form .form-control {
+        padding: 10px 16px;
+    }
+
+    .my-profile-page .primery-btn,
+    .my-profile-page .text-right-btm-btn,
+    .my-profile-page .question-action-btn {
+        padding: 10px 90px;
+        width: calc(100% - 24px);
+        margin: 20px auto 0 !important;
+    }
+
+    #columnchart_material {
+        padding: 0;
+    }
+
+    .rview-heading {
+        font-size: var(--font22);
+    }
+
+    .result-perans-table {
+        padding: 24px;
+        gap: 12px;
+    }
+
+    .tresult-top-card-first,
+    .tresult-top-card-last {
+        width: 100%;
+    }
+
+    .tresult-tcard {
+        width: 100%;
+        border: none !important;
+    }
+
+    .tresult-heading {
+        font-size: var(--font22);
+    }
+
+    .tresult-top-card-last {
+        gap: 16px;
+        flex-direction: column;
+    }
+
+    .questions-ans-submit .btn-check:disabled+.btn.your-answer::after,
+    .questions-ans-submit .btn-check[disabled]+.btn.your-answer::after,
+    .questions-ans-submit .btn-check:disabled+.btn.right-answer::after,
+    .questions-ans-submit .btn-check[disabled]+.btn.right-answer::after {
+        right: 20px;
+    }
+
+    .result-chart-lables2 {
+        gap: 12px;
+    }
+}

@@ -1,0 +1,218 @@
+.other-pages-hero-section {
+    background-image: url(../img/listing-top-bg.jpg);
+    padding: 40px 0;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    margin-bottom: 60px;
+}
+
+.current-page-name h2 {
+    margin-bottom: 20px;
+    font-size: 46px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.current-pages-path {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.current-page-pera p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.contact-us-card {
+    background-color: #fff;
+    border-radius: 20px;
+    text-align: center;
+    padding: 24px;
+    border: 1px solid var(--gray);
+    height: 100%;
+}
+
+.contact-us-card .contact-card-icon {
+    font-size: 36px;
+    margin-bottom: 12px;
+    color: var(--primery);
+}
+
+.contact-us-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--dark);
+    margin-bottom: 8px;
+}
+
+.contact-us-card p {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--primery);
+    margin-bottom: 0;
+}
+
+.contact-page-cards {
+    margin-bottom: 36px;
+}
+
+.others-top-heading h2 {
+    font-size: var(--font-subheading);
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--dark);
+    text-align: center;
+}
+
+.others-top-heading h2 span {
+    color: var(--primery);
+}
+
+.contact-card .form-label {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--dark);
+    margin-bottom: 6px;
+}
+
+.contact-input-group {
+    position: relative;
+}
+
+.contact-card .contact-input-icon {
+    position: absolute;
+    right: 12px;
+    top: 10px;
+    font-size: 18px;
+    color: var(--dark);
+}
+
+.contact-card .form-control {
+    box-shadow: none !important;
+    padding: 10px 32px 10px 16px;
+    border-radius: 10px;
+}
+
+.cinfo-submit-btn {
+    background: var(--primery) !important;
+    color: var(--white) !important;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 10px 64px;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid var(--primery) !important;
+}
+
+.contact-card {
+    margin-bottom: 60px;
+}
+
+.contact-map-section iframe {
+    width: 100% !important;
+    height: 400px !important;
+}
+
+.faq-page-section {
+    margin-bottom: 60px;
+}
+
+.faq-page-section .accordion-button {
+    box-shadow: none !important;
+    background: #fff !important;
+    color: var(--primery);
+}
+
+.faq-page-section .accordion-button.collapsed {
+    color: var(--dark);
+}
+
+.others-page-content p {
+    color: var(--text);
+}
+
+.others-page-content h1,
+.others-page-content h2,
+.others-page-content h3,
+.others-page-content h4,
+.others-page-content h5,
+.others-page-content h6
+{
+color: var(--dark);
+}
+
+.others-page-content a {
+    color: var(--primery);
+    display: inline;
+}
+
+@media (max-width: 1199.98px) {
+    .contact-us-card .contact-card-icon {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+
+    .contact-us-card p {
+        font-size: 16px;
+    }
+
+    .contact-us-card {
+        border-radius: 16px;
+        padding: 24px 12px;
+    }
+
+    .contact-us-card h3 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:991.98px) {
+    .contact-us-card p {
+        text-wrap: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .others-top-heading h2 {
+        font-size: 48px;
+    }
+}
+
+@media (max-width:767.98px) {
+    .contact-us-card p {
+        text-wrap: wrap;
+        overflow: auto;
+        text-overflow: ellipsis;
+    }
+
+    .others-top-heading h2 {
+        font-size: 36px;
+    }
+
+    .current-page-name h2 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width:575.98px) {
+    .others-top-heading h2 {
+        font-size: 28px;
+    }
+
+    .current-page-name h2 {
+        font-size: 28px;
+    }
+
+    .current-pages-path,
+    .current-page-pera p {
+        font-size: 16px;
+    }
+
+    .faq-page-section .accordion-button {
+        font-size: 14px;
+    }
+}

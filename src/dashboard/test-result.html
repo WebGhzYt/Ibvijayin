@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBVIJAYIN</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="../assets/img/favicon.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- <link rel="stylesheet" href="assets/css/all.min.css"> -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/dashboard-style.css">
+    <link rel="stylesheet" href="../assets/css/dashboard-responsive.css">
+</head>
+
+<body>
+    <header>
+        <div class="dashboard-header">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="../assets/img/logo.png" alt="logo-png" class="img-fluid">
+                    </a>
+                    <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button> -->
+                    <!-- <div class="collapse show navbar-collapse" id="navbarSupportedContent"> -->
+                        <div class="header-buttons ms-auto">
+                            <div class="notification">
+                                <button class="notification-btn">
+                                    <i class="fa-regular fa-bell"></i>
+                                </button>
+                            </div>
+                            <div class="user-profile">
+                                <div class="user-profile-content d-none d-sm-block">
+                                    <p class="user-name">Hi, Jhon</p>
+                                    <p class="user-mobile">+91 12345 01201</p>
+                                </div>
+                                <button class="user-profile-btn" id="Profile">
+                                    <i class="fa-regular fa-user"></i>
+                                </button>
+                                <div class="profile-drop-menu">
+                                    <div class="profile-menu-top">
+                                        <p class="user-name">Hi, Jhon</p>
+                                        <p class="user-mobile">+91 12345 01201</p>
+                                    </div>
+                                    <ul class="profile-menu">
+                                        <li>
+                                            <a href="my-profile.html" class="profile-menu-link">
+                                                <i class="fa-regular fa-user"></i>
+                                                My Profile
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="profile-menu-link">
+                                                <i class="fa-solid fa-book"></i>
+                                                My courses
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="profile-menu-link">
+                                                <i class="fa-solid fa-file-invoice"></i>
+                                                My Invoice
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="profile-menu-link">
+                                                <i class="fa-solid fa-phone"></i>
+                                                Contact us
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="profile-menu-link">
+                                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                                Logout
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="profile-menu-bottom">
+                                        <p>Terms & Conditions | Privacy Policy </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- </div> -->
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section>
+        <div class="test-result-top">
+            <div class="container">
+                <h2 class="tresult-heading">Thank you for attempting Physics, Class-1 Live Test </h2>
+                <div class="tresult-top-cards">
+                    <div class="tresult-top-card-first">
+                        <div class="tresult-tcard">
+                            <img src="../assets/img/dashboard-img/Mask group.png" alt="#">
+                            <div class="tr-card-text">
+                                <h4>Score</h4>
+                                <p>00/20</p>
+                            </div>
+                        </div>
+                        <div class="tresult-tcard">
+                            <img src="../assets/img/dashboard-img/Group 87.png" alt="#">
+                            <div class="tr-card-text">
+                                <h4>Attempts</h4>
+                                <p>02</p>
+                            </div>
+                        </div>
+                        <div class="tresult-tcard">
+                            <img src="../assets/img/dashboard-img/Group 88.png" alt="#">
+                            <div class="tr-card-text">
+                                <h4>Speed</h4>
+                                <p>02/min</p>
+                            </div>
+                        </div>
+                        <div class="tresult-tcard">
+                            <img src="../assets/img/dashboard-img/goals.png" alt="#">
+                            <div class="tr-card-text">
+                                <h4>Accuracy</h4>
+                                <p>20%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tresult-top-card-last">
+                        <div class="tresult-chart">
+                            <canvas id="pieChart"></canvas>
+                        </div>
+                        <div class="result-chart-lables">
+                            <div class="rchart-lable">
+                                <button class="result-ans-btn correct">10</button>Correct
+                            </div>
+
+                            <div class="rchart-lable">
+                                <button class="result-ans-btn incorrect">10</button>Incorrect
+                            </div>
+
+                            <div class="rchart-lable">
+                                <button class="result-ans-btn skipped">10</button>Skipped
+                            </div>
+
+                            <!-- <div class="rchart-lable">
+                                <button class="result-ans-btn n-attempts">10</button>Not Attempts
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="result-view-section">
+            <div class="container">
+                <h3 class="rview-heading">Question Calendar</h3>
+                <p class="rview-text">Here’s a summary of your answers to each question. click on the question number to
+                    see the answer</p>
+                <div class="result-chart-lables2">
+                    <div class="rchart-lable">
+                        <button class="result-ans-btn correct">01</button>Correct
+                    </div>
+
+                    <div class="rchart-lable">
+                        <button class="result-ans-btn incorrect">02</button>Incorrect
+                    </div>
+
+                    <div class="rchart-lable">
+                        <button class="result-ans-btn skipped">03</button>Skipped
+                    </div>
+
+                    <div class="rchart-lable">
+                        <button class="result-ans-btn n-attempts">04</button>Not Attempts
+                    </div>
+                </div>
+                <div class="result-perans-table">
+                    <div class="rchart-lable">
+                        <a href="test-review.html" class="result-ans-btn correct">05</a>
+                    </div>
+
+                    <div class="rchart-lable">
+                        <a href="test-review.html" class="result-ans-btn incorrect">06</a>
+                    </div>
+
+                    <div class="rchart-lable">
+                        <a href="test-review.html" class="result-ans-btn skipped">07</a>
+                    </div>
+
+                    <div class="rchart-lable">
+                        <a class="result-ans-btn n-attempts">08</a>
+                    </div>
+
+                    <div class="rchart-lable">
+                        <a href="test-review.html" class="result-ans-btn correct">09</a>
+                    </div>
+
+                    <div class="rchart-lable">
+                        <a href="test-review.html" class="result-ans-btn incorrect">10</a>
+                    </div>
+
+                    <div class="rchart-lable">
+                        <a href="test-review.html" class="result-ans-btn skipped">11</a>
+                    </div>
+
+                    <div class="rchart-lable">
+                        <a class="result-ans-btn n-attempts">12</a>
+                    </div>
+
+                    <div class="rchart-lable">
+                        <a class="result-ans-btn correct">13</a>
+                    </div>
+
+                    <div class="rchart-lable">
+                        <a class="result-ans-btn incorrect">14</a>
+                    </div>
+
+                    <div class="rchart-lable">
+                        <a class="result-ans-btn skipped">15</a>
+                    </div>
+
+                    <div class="rchart-lable">
+                        <a class="result-ans-btn n-attempts">16</a>
+                    </div>
+
+                    <div class="rchart-lable">
+                        <a class="result-ans-btn n-attempts">17</a>
+                    </div>
+
+                    <div class="rchart-lable">
+                        <a class="result-ans-btn n-attempts">18</a>
+                    </div>
+
+                    <div class="rchart-lable">
+                        <a class="result-ans-btn n-attempts">19</a>
+                    </div>
+
+                    <div class="rchart-lable">
+                        <a class="result-ans-btn n-attempts">20</a>
+                    </div>
+
+                    <div class="rchart-lable">
+                        <a class="result-ans-btn n-attempts">21</a>
+                    </div>
+
+                    <div class="rchart-lable">
+                        <a class="result-ans-btn n-attempts">22</a>
+                    </div>
+
+                    <div class="rchart-lable">
+                        <a class="result-ans-btn n-attempts">23</a>
+                    </div>
+
+                    <div class="rchart-lable">
+                        <a class="result-ans-btn n-attempts">24</a>
+                    </div>
+
+                    <div class="rchart-lable">
+                        <a class="result-ans-btn n-attempts">25</a>
+                    </div>
+
+                    <div class="rchart-lable">
+                        <a class="result-ans-btn n-attempts">26</a>
+                    </div>
+
+                    <div class="rchart-lable">
+                        <a class="result-ans-btn n-attempts">27</a>
+                    </div>
+
+                    <div class="rchart-lable">
+                        <a class="result-ans-btn n-attempts">28</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="result-view-section">
+            <div class="container">
+                <h3 class="rview-heading">Difficulty Analysis</h3>
+                <p class="rview-text">Every exam contains 3 category of questions i.e., Easy, Moderate and Tough. It is
+                    important to make sure that you have a high accuracy in the first two, i.e. easy and moderately
+                    difficult questions. This section will help you visualize the same for every subject.</p>
+                <div class="result-column-chart">
+                    <div id="columnchart_material"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- js starts here -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script>
+        (function () {
+
+            var button = document.querySelector('#Profile');
+            var box = document.querySelector('.profile-drop-menu');
+
+            button.addEventListener('click', function () {
+
+                box.classList.toggle('active');
+
+            });
+
+        })();
+    </script>
+    <script src="../assets/js/ajax.jquery.min.js"></script>
+    <!-- <script src="assets/js/all.min.js"></script> -->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/column-chart.js"></script>
+
+    <script>
+        const canvas = document.getElementById('pieChart');
+        const ctx = canvas.getContext('2d');
+
+        // Data for the pie chart (percentages must add up to 100)
+        const data = [
+            { label: 'Correct', value: 40, color: '#009000' },
+            { label: 'Incorrect', value: 20, color: '#FF2E2E' },
+            { label: 'Skipped', value: 40, color: '#B8B8B8' },
+        ];
+
+        // Function to draw the pie chart
+        function drawPieChart(ctx, data, centerX, centerY, radius) {
+            let startAngle = 0;
+
+            data.forEach(segment => {
+                const sliceAngle = (segment.value / 100) * 2 * Math.PI;
+                const endAngle = startAngle + sliceAngle;
+
+                // Draw the segment
+                ctx.beginPath();
+                ctx.moveTo(centerX, centerY);
+                ctx.arc(centerX, centerY, radius, startAngle, endAngle);
+                ctx.closePath();
+                ctx.fillStyle = segment.color;
+                ctx.fill();
+
+                startAngle = endAngle;
+            });
+        }
+
+        // Draw the chart
+        const centerX = canvas.width / 2;
+        const centerY = canvas.height / 2;
+        const radius = Math.min(canvas.width, canvas.height) / 2 - 10;
+
+        drawPieChart(ctx, data, centerX, centerY, radius);
+
+    </script>
+
+    <script>
+        google.charts.load('current', {
+            'packages': ['bar']
+        });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Type', 'Correct', 'Incorrect', 'Skipped'],
+                ['Easy', 24, 10, 12],
+                ['Moderate', 24, 13, 17],
+                ['Tough', 10, 20, 14],
+            ]);
+
+            var options = {
+                chart: {
+                    title: 'Overall Difficulty Analysis',
+                    // subtitle: 'Correct, Incorrect, Skipped',
+                },
+                colors: ['#009000', '#FF2E2E', '#B8B8B8']
+            };
+
+            var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+            chart.draw(data, google.charts.Bar.convertOptions(options));
+        }
+    </script>
+
+</body>
+
+</html>
